@@ -231,7 +231,7 @@ func sshExecExternal(c conf.ServerInfo, cmd string, sudo bool) (result sshResult
 		"-o", "UserKnownHostsFile=/dev/null",
 		"-o", "LogLevel=quiet",
 		"-o", "ConnectionAttempts=3",
-		"-o", "ConnectTimeout=10",
+		"-o", "ConnectTimeout=120",
 		"-o", "ControlMaster=no",
 		"-o", "ControlPath=none",
 
