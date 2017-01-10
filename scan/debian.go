@@ -150,16 +150,18 @@ func (o *debian) install() error {
 	}
 
 	// apt-get update
-	o.log.Infof("apt-get update...")
-	cmd := util.PrependProxyEnv("apt-get update")
-	if r := o.ssh(cmd, sudo); !r.isSuccess() {
-		msg := fmt.Sprintf("Failed to SSH: %s", r)
-		o.log.Errorf(msg)
-		return fmt.Errorf(msg)
-	}
+  if config.Conf.ScanUpdate {
+    o.log.Infof("apt-get update...")
+    cmd := util.PrependProxyEnv("apt-get update")
+    if r := o.ssh(cmd, sudo); !r.isSuccess() {
+      msg := fmt.Sprintf("Failed to SSH: %s", r)
+      o.log.Errorf(msg)
+      return fmt.Errorf(msg)
+    }
+  }
 
 	for _, name := range o.lackDependencies {
-		cmd = util.PrependProxyEnv("apt-get install -y " + name)
+		cmd := util.PrependProxyEnv("apt-get install -y " + name)
 		if r := o.ssh(cmd, sudo); !r.isSuccess() {
 			msg := fmt.Sprintf("Failed to SSH: %s", r)
 			o.log.Errorf(msg)
@@ -243,11 +245,13 @@ func (o *debian) checkRequiredPackagesInstalled() error {
 }
 
 func (o *debian) scanUnsecurePackages(packs []models.PackageInfo) ([]CvePacksInfo, error) {
-	o.log.Infof("apt-get update...")
-	cmd := util.PrependProxyEnv("apt-get update")
-	if r := o.ssh(cmd, sudo); !r.isSuccess() {
-		return nil, fmt.Errorf("Failed to SSH: %s", r)
-	}
+  if config.Conf.ScanUpdate {
+    o.log.Infof("apt-get update...")
+    cmd := util.PrependProxyEnv("apt-get update")
+    if r := o.ssh(cmd, sudo); !r.isSuccess() {
+      return nil, fmt.Errorf("Failed to SSH: %s", r)
+    }
+  }
 
 	upgradablePackNames, err := o.GetUpgradablePackNames()
 	if err != nil {

@@ -49,6 +49,7 @@ type Config struct {
 	SSHExternal    bool
 	ContainersOnly bool
 	SkipBroken     bool
+	ScanUpdate     bool
 
 	HTTPProxy   string `valid:"url"`
 	ResultsDir  string

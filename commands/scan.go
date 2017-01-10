@@ -60,6 +60,7 @@ type ScanCmd struct {
 
 	containersOnly bool
 	skipBroken     bool
+	ScanUpdate     bool
 
 	// reporting
 	reportSlack     bool
@@ -194,6 +195,12 @@ func (p *ScanCmd) SetFlags(f *flag.FlagSet) {
 		"skip-broken",
 		false,
 		"[For CentOS] yum update changelog with --skip-broken option")
+
+	f.BoolVar(
+		&p.ScanUpdate,
+		"scan-update",
+		false,
+		"[For Debian] run apt-get update before scanning")
 
 	f.StringVar(
 		&p.httpProxy,
