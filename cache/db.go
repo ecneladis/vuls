@@ -18,8 +18,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 package cache
 
 import (
-	"github.com/future-architect/vuls/config"
-	"github.com/future-architect/vuls/models"
+	"github.com/ecneladis/vuls/config"
+	"github.com/ecneladis/vuls/models"
 )
 
 // DB has a cache instance

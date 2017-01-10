@@ -23,7 +23,7 @@ import (
 	"runtime"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/future-architect/vuls/models"
+	"github.com/ecneladis/vuls/models"
 	formatter "github.com/kotakanbe/logrus-prefixed-formatter"
 )
 

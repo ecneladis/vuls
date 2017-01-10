@@ -17,7 +17,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 package report
 
-import "github.com/future-architect/vuls/models"
+import "github.com/ecneladis/vuls/models"
 
 const (
 	nvdBaseURL            = "https://web.nvd.nist.gov/view/vuln/detail"

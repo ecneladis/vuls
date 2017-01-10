@@ -28,8 +28,8 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/s3"
 
-	c "github.com/future-architect/vuls/config"
-	"github.com/future-architect/vuls/models"
+	c "github.com/ecneladis/vuls/config"
+	"github.com/ecneladis/vuls/models"
 )
 
 // CheckIfBucketExists check the existence of S3 bucket

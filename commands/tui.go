@@ -26,8 +26,8 @@ import (
 	"strings"
 
 	log "github.com/Sirupsen/logrus"
-	c "github.com/future-architect/vuls/config"
-	"github.com/future-architect/vuls/report"
+	c "github.com/ecneladis/vuls/config"
+	"github.com/ecneladis/vuls/report"
 	"github.com/google/subcommands"
 )
 

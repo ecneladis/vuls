@@ -28,11 +28,11 @@ import (
 	"time"
 
 	"github.com/Sirupsen/logrus"
-	c "github.com/future-architect/vuls/config"
-	"github.com/future-architect/vuls/cveapi"
-	"github.com/future-architect/vuls/report"
-	"github.com/future-architect/vuls/scan"
-	"github.com/future-architect/vuls/util"
+	c "github.com/ecneladis/vuls/config"
+	"github.com/ecneladis/vuls/cveapi"
+	"github.com/ecneladis/vuls/report"
+	"github.com/ecneladis/vuls/scan"
+	"github.com/ecneladis/vuls/util"
 	"github.com/google/subcommands"
 	"github.com/k0kubun/pp"
 )

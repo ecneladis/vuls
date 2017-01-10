@@ -24,7 +24,7 @@ import (
 
 	"github.com/BurntSushi/toml"
 	log "github.com/Sirupsen/logrus"
-	"github.com/future-architect/vuls/contrib/owasp-dependency-check/parser"
+	"github.com/ecneladis/vuls/contrib/owasp-dependency-check/parser"
 )
 
 // TOMLLoader loads config

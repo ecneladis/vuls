@@ -23,9 +23,9 @@ import (
 	"testing"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/future-architect/vuls/cache"
-	"github.com/future-architect/vuls/config"
-	"github.com/future-architect/vuls/models"
+	"github.com/ecneladis/vuls/cache"
+	"github.com/ecneladis/vuls/config"
+	"github.com/ecneladis/vuls/models"
 	"github.com/k0kubun/pp"
 )
 

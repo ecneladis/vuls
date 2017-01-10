@@ -25,8 +25,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/future-architect/vuls/config"
-	"github.com/future-architect/vuls/models"
+	"github.com/ecneladis/vuls/config"
+	"github.com/ecneladis/vuls/models"
 	"github.com/gosuri/uitable"
 )
 

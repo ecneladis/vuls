@@ -23,7 +23,7 @@ import (
 
 	"github.com/Sirupsen/logrus"
 	"github.com/boltdb/bolt"
-	"github.com/future-architect/vuls/util"
+	"github.com/ecneladis/vuls/util"
 )
 
 // Bolt holds a pointer of bolt.DB

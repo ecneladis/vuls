@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/future-architect/vuls/models"
+	"github.com/ecneladis/vuls/models"
 )
 
 const (

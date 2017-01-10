@@ -24,8 +24,8 @@ import (
 	"net/smtp"
 	"strings"
 
-	"github.com/future-architect/vuls/config"
-	"github.com/future-architect/vuls/models"
+	"github.com/ecneladis/vuls/config"
+	"github.com/ecneladis/vuls/models"
 )
 
 // MailWriter send mail

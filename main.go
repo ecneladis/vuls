@@ -24,7 +24,7 @@ import (
 
 	"context"
 
-	"github.com/future-architect/vuls/commands"
+	"github.com/ecneladis/vuls/commands"
 	"github.com/google/subcommands"
 
 	_ "github.com/mattn/go-sqlite3"

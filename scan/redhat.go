@@ -25,10 +25,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/future-architect/vuls/config"
-	"github.com/future-architect/vuls/cveapi"
-	"github.com/future-architect/vuls/models"
-	"github.com/future-architect/vuls/util"
+	"github.com/ecneladis/vuls/config"
+	"github.com/ecneladis/vuls/cveapi"
+	"github.com/ecneladis/vuls/models"
+	"github.com/ecneladis/vuls/util"
 
 	"github.com/k0kubun/pp"
 )
@@ -385,7 +385,7 @@ func (o *redhat) parseYumCheckUpdateLines(stdout string) (results models.Package
 		if needToParse {
 			if strings.HasPrefix(line, "Obsoleting") ||
 				strings.HasPrefix(line, "Security:") {
-				// see https://github.com/future-architect/vuls/issues/165
+				// see https://github.com/ecneladis/vuls/issues/165
 				continue
 			}
 			candidate, err := o.parseYumCheckUpdateLine(line)

@@ -24,8 +24,8 @@ import (
 
 	"github.com/Sirupsen/logrus"
 	"github.com/boltdb/bolt"
-	"github.com/future-architect/vuls/config"
-	"github.com/future-architect/vuls/models"
+	"github.com/ecneladis/vuls/config"
+	"github.com/ecneladis/vuls/models"
 )
 
 const path = "/tmp/vuls-test-cache-11111111.db"

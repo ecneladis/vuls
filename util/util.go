@@ -22,7 +22,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/future-architect/vuls/config"
+	"github.com/ecneladis/vuls/config"
 )
 
 // GenWorkers generates goroutine

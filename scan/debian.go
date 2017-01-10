@@ -24,11 +24,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/future-architect/vuls/cache"
-	"github.com/future-architect/vuls/config"
-	"github.com/future-architect/vuls/cveapi"
-	"github.com/future-architect/vuls/models"
-	"github.com/future-architect/vuls/util"
+	"github.com/ecneladis/vuls/cache"
+	"github.com/ecneladis/vuls/config"
+	"github.com/ecneladis/vuls/cveapi"
+	"github.com/ecneladis/vuls/models"
+	"github.com/ecneladis/vuls/util"
 )
 
 // inherit OsTypeInterface
